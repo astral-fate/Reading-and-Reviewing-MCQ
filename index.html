@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Quiz</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <h1>Interactive Quiz</h1>
+        <div class="tabs">
+            <button class="tab-button active" data-tab="fill">Fill in the Blank</button>
+            <button class="tab-button" data-tab="tf">True/False</button>
+            <button class="tab-button" data-tab="mc">Multiple Choice</button>
+        </div>
+
+        <div id="fill" class="tab-content active">
+            <h2>Fill in the Blank Questions</h2>
+            <div id="fill-questions"></div>
+        </div>
+
+        <div id="tf" class="tab-content">
+            <h2>True/False Questions</h2>
+            <div id="tf-questions"></div>
+        </div>
+
+        <div id="mc" class="tab-content">
+            <h2>Multiple Choice Questions</h2>
+            <div id="mc-questions"></div>
+        </div>
+    </div>
+
+    <script src="quiz-data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
